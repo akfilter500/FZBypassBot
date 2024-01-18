@@ -28,7 +28,7 @@ class Config:
     AUTO_BYPASS     = getenv('AUTO_BYPASS', 'True').lower() == 'true'
     AUTH_CHATS      = getenv('AUTH_CHATS', '-1001920596580').split()
     OWNER_ID        = int(getenv('OWNER_ID', 1397269319))
-    DIRECT_INDEX    = getenv('DIRECT_INDEX', 'https://gitlab.com/GoogleDriveIndex/cloudflare-gdrive-download-worker/-/blob/main/src/worker.js').rstrip('/')
+    DIRECT_INDEX    = getenv('DIRECT_INDEX', 'https://gitlab.com/GoogleDriveIndex/cloudflare-gdrive-download-worker/-/raw/main/src/worker.js?ref_type=heads').rstrip('/')
     LARAVEL_SESSION = getenv('LARAVEL_SESSION', '')
     XSRF_TOKEN      = getenv('XSRF_TOKEN', '')
     GDTOT_CRYPT     = getenv('GDTOT_CRYPT', '')
